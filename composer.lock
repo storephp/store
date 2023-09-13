@@ -4,8 +4,85 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa322c53454393ed775cfe4807d54a50",
+    "content-hash": "57d1932e10be4bd2b9026bd5e608456d",
     "packages": [
+        {
+            "name": "blade-ui-kit/blade-icons",
+            "version": "1.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/blade-ui-kit/blade-icons.git",
+                "reference": "4d6b6b2548b1994a777211a985e18691701891e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/blade-ui-kit/blade-icons/zipball/4d6b6b2548b1994a777211a985e18691701891e4",
+                "reference": "4d6b6b2548b1994a777211a985e18691701891e4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.0|^9.0|^10.0",
+                "illuminate/filesystem": "^8.0|^9.0|^10.0",
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "illuminate/view": "^8.0|^9.0|^10.0",
+                "php": "^7.4|^8.0",
+                "symfony/console": "^5.3|^6.0",
+                "symfony/finder": "^5.3|^6.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "bin": [
+                "bin/blade-icons-generate"
+            ],
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BladeUI\\Icons\\BladeIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "BladeUI\\Icons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dries Vints",
+                    "homepage": "https://driesvints.com"
+                }
+            ],
+            "description": "A package to easily make use of icons in your Laravel Blade views.",
+            "homepage": "https://github.com/blade-ui-kit/blade-icons",
+            "keywords": [
+                "blade",
+                "icons",
+                "laravel",
+                "svg"
+            ],
+            "support": {
+                "issues": "https://github.com/blade-ui-kit/blade-icons/issues",
+                "source": "https://github.com/blade-ui-kit/blade-icons"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/driesvints",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-06-09T15:47:26+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.11.0",
@@ -971,17 +1048,85 @@
             "time": "2023-08-27T10:19:19+00:00"
         },
         {
-            "name": "laravel/framework",
-            "version": "v10.23.0",
+            "name": "jantinnerezo/livewire-alert",
+            "version": "2.2.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/framework.git",
-                "reference": "7d6a79ce8ff52a4d0d385ac290dcc048aa514ce7"
+                "url": "https://github.com/jantinnerezo/livewire-alert.git",
+                "reference": "a017d3f41024ca3a589a6b0db5d0af3efe532fa9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/7d6a79ce8ff52a4d0d385ac290dcc048aa514ce7",
-                "reference": "7d6a79ce8ff52a4d0d385ac290dcc048aa514ce7",
+                "url": "https://api.github.com/repos/jantinnerezo/livewire-alert/zipball/a017d3f41024ca3a589a6b0db5d0af3efe532fa9",
+                "reference": "a017d3f41024ca3a589a6b0db5d0af3efe532fa9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.5 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0",
+                "livewire/livewire": "^2.0",
+                "php": "^7.4|^8.0|^8.1|^8.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.15|^7.0|^8.0",
+                "phpunit/phpunit": "^9.5|^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jantinnerezo\\LivewireAlert\\LivewireAlertServiceProvider"
+                    ],
+                    "aliases": {
+                        "LivewireAlert": "Jantinnerezo\\LivewireAlert\\LivewireAlertFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jantinnerezo\\LivewireAlert\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jantinn Erezo",
+                    "email": "erezojantinn@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This package provides a simple alert utilities for your livewire components.",
+            "homepage": "https://github.com/jantinnerezo/livewire-alert",
+            "keywords": [
+                "jantinnerezo",
+                "livewire-alert"
+            ],
+            "support": {
+                "issues": "https://github.com/jantinnerezo/livewire-alert/issues",
+                "source": "https://github.com/jantinnerezo/livewire-alert/tree/2.2.7"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/paypalme/jantinn",
+                    "type": "custom"
+                }
+            ],
+            "time": "2023-02-15T18:05:31+00:00"
+        },
+        {
+            "name": "laravel/framework",
+            "version": "v10.23.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "dbfd495557678759153e8d71cc2f6027686ca51e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/dbfd495557678759153e8d71cc2f6027686ca51e",
+                "reference": "dbfd495557678759153e8d71cc2f6027686ca51e",
                 "shasum": ""
             },
             "require": {
@@ -1081,7 +1226,7 @@
                 "league/flysystem-read-only": "^3.3",
                 "league/flysystem-sftp-v3": "^3.0",
                 "mockery/mockery": "^1.5.1",
-                "orchestra/testbench-core": "^8.4",
+                "orchestra/testbench-core": "^8.10",
                 "pda/pheanstalk": "^4.0",
                 "phpstan/phpstan": "^1.4.7",
                 "phpunit/phpunit": "^10.0.7",
@@ -1168,7 +1313,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-09-12T15:55:31+00:00"
+            "time": "2023-09-13T14:51:46+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -1808,6 +1953,79 @@
             "time": "2023-08-05T12:09:49+00:00"
         },
         {
+            "name": "livewire/livewire",
+            "version": "v2.12.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/livewire.git",
+                "reference": "7d3a57b3193299cf1a0639a3935c696f4da2cf92"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/7d3a57b3193299cf1a0639a3935c696f4da2cf92",
+                "reference": "7d3a57b3193299cf1a0639a3935c696f4da2cf92",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^7.0|^8.0|^9.0|^10.0",
+                "illuminate/support": "^7.0|^8.0|^9.0|^10.0",
+                "illuminate/validation": "^7.0|^8.0|^9.0|^10.0",
+                "league/mime-type-detection": "^1.9",
+                "php": "^7.2.5|^8.0",
+                "symfony/http-kernel": "^5.0|^6.0"
+            },
+            "require-dev": {
+                "calebporzio/sushi": "^2.1",
+                "laravel/framework": "^7.0|^8.0|^9.0|^10.0",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench": "^5.0|^6.0|^7.0|^8.0",
+                "orchestra/testbench-dusk": "^5.2|^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^8.4|^9.0",
+                "psy/psysh": "@stable"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Livewire\\LivewireServiceProvider"
+                    ],
+                    "aliases": {
+                        "Livewire": "Livewire\\Livewire"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Livewire\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "A front-end framework for Laravel.",
+            "support": {
+                "issues": "https://github.com/livewire/livewire/issues",
+                "source": "https://github.com/livewire/livewire/tree/v2.12.6"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/livewire",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-08-11T04:02:34+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "3.4.0",
             "source": {
@@ -2304,6 +2522,153 @@
                 }
             ],
             "time": "2023-02-08T01:06:31+00:00"
+        },
+        {
+            "name": "outmart/php-pricing-rules",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/outmart/php-pricing-rules.git",
+                "reference": "e2a843577d4e4a7ac39174258e01533012d647f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/outmart/php-pricing-rules/zipball/e2a843577d4e4a7ac39174258e01533012d647f0",
+                "reference": "e2a843577d4e4a7ac39174258e01533012d647f0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OutMart\\PricingRules\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Karim Mohamed (Komtcho)",
+                    "email": "komicho1996@gmail.com"
+                }
+            ],
+            "description": "Create pricing rules that apply if the specified case matches.",
+            "keywords": [
+                "ecommerce",
+                "module",
+                "outmart",
+                "pricing-rules"
+            ],
+            "support": {
+                "issues": "https://github.com/outmart/php-pricing-rules/issues",
+                "source": "https://github.com/outmart/php-pricing-rules/tree/0.1.0"
+            },
+            "time": "2022-11-30T17:22:01+00:00"
+        },
+        {
+            "name": "outmart/team",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/outmart/laravel-team.git",
+                "reference": "f523aceb9af6ec30ba4947987b680b64f0be3534"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/outmart/laravel-team/zipball/f523aceb9af6ec30ba4947987b680b64f0be3534",
+                "reference": "f523aceb9af6ec30ba4947987b680b64f0be3534",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "OutMart\\Team\\TeamServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "OutMart\\Team\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Karim Mohamed",
+                    "email": "komicho1996@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/outmart/laravel-team/issues",
+                "source": "https://github.com/outmart/laravel-team/tree/main"
+            },
+            "time": "2023-03-23T22:49:36+00:00"
+        },
+        {
+            "name": "pharaonic/laravel-helpers",
+            "version": "2.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Pharaonic/laravel-helpers.git",
+                "reference": "ca103af33fc2d910b1ce94e2332fcb0cf64e3403"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Pharaonic/laravel-helpers/zipball/ca103af33fc2d910b1ce94e2332fcb0cf64e3403",
+                "reference": "ca103af33fc2d910b1ce94e2332fcb0cf64e3403",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=6.0",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Helpers.php"
+                ],
+                "psr-4": {
+                    "Pharaonic\\Laravel\\Helpers\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Raggi",
+                    "email": "support@pharaonic.io",
+                    "homepage": "https://pharaonic.io"
+                }
+            ],
+            "description": "Laravel - Classes, Traits, Functions",
+            "keywords": [
+                "helpers",
+                "laravel",
+                "pharaonic",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/Pharaonic/laravel-helpers/issues",
+                "source": "https://github.com/Pharaonic/laravel-helpers/tree/2.4.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/Pharaonic",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-12-25T07:53:06+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -3092,6 +3457,235 @@
                 }
             ],
             "time": "2023-04-15T23:01:58+00:00"
+        },
+        {
+            "name": "ryangjchandler/blade-tabler-icons",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ryangjchandler/blade-tabler-icons.git",
+                "reference": "e911146f6ea809712242106bcfec0dc381905f6a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ryangjchandler/blade-tabler-icons/zipball/e911146f6ea809712242106bcfec0dc381905f6a",
+                "reference": "e911146f6ea809712242106bcfec0dc381905f6a",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.5",
+                "illuminate/support": "^10.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.14",
+                "orchestra/testbench": "^8.0",
+                "phpunit/phpunit": "^9.5.10"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RyanChandler\\TablerIcons\\BladeTablerIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RyanChandler\\TablerIcons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Chandler",
+                    "email": "support@ryangjchandler.co.uk",
+                    "homepage": "https://ryangjchandler.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A package to easily make use of Tabler icons in your Laravel Blade views.",
+            "homepage": "https://github.com/ryangjchandler/blade-tabler-icons",
+            "keywords": [
+                "blade",
+                "laravel",
+                "tabler"
+            ],
+            "support": {
+                "issues": "https://github.com/ryangjchandler/blade-tabler-icons/issues",
+                "source": "https://github.com/ryangjchandler/blade-tabler-icons/tree/v2.1.0"
+            },
+            "time": "2023-08-15T09:10:31+00:00"
+        },
+        {
+            "name": "storephp/bundler",
+            "version": "v1.0.0-beta.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/storephp/bundler.git",
+                "reference": "5b763b08bcf4fe8af9d5fcc6815da9aa40a880e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/storephp/bundler/zipball/5b763b08bcf4fe8af9d5fcc6815da9aa40a880e8",
+                "reference": "5b763b08bcf4fe8af9d5fcc6815da9aa40a880e8",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "StorePHP\\Bundler\\StorePHPBundlerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "StorePHP\\Bundler\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Karim Mohamed",
+                    "email": "komicho1996@gmail.com"
+                }
+            ],
+            "description": "This is StorePHP's framework for building bundles",
+            "support": {
+                "issues": "https://github.com/storephp/bundler/issues",
+                "source": "https://github.com/storephp/bundler/tree/v1.0.0-beta.2"
+            },
+            "time": "2023-09-13T16:03:57+00:00"
+        },
+        {
+            "name": "storephp/core",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/storephp/core.git",
+                "reference": "6096792e713591c7265f84a438e6fa180571b648"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/storephp/core/zipball/6096792e713591c7265f84a438e6fa180571b648",
+                "reference": "6096792e713591c7265f84a438e6fa180571b648",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=9.0",
+                "laravel/sanctum": "^3.2",
+                "outmart/php-pricing-rules": "^0.1.0",
+                "pharaonic/laravel-helpers": "^2.4",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.17",
+                "pestphp/pest-plugin-laravel": "^1.4",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Store\\StoreServiceProvider",
+                        "Store\\Providers\\EventServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Store\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Karim Mohamed (Komtcho)",
+                    "email": "komicho1996@gmail.com"
+                }
+            ],
+            "description": "eCommerce Core to help you build your eCommerce based on laravel.",
+            "keywords": [
+                "baskets",
+                "customers",
+                "ecommerce",
+                "laravel",
+                "modules"
+            ],
+            "support": {
+                "issues": "https://github.com/storephp/core/issues",
+                "source": "https://github.com/storephp/core/tree/develop"
+            },
+            "time": "2023-08-29T20:21:56+00:00"
+        },
+        {
+            "name": "storephp/framework",
+            "version": "v1.0.0-beta.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/storephp/framework.git",
+                "reference": "0c5d91be8e555161f572d42f3b92e9cfa301a036"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/storephp/framework/zipball/0c5d91be8e555161f572d42f3b92e9cfa301a036",
+                "reference": "0c5d91be8e555161f572d42f3b92e9cfa301a036",
+                "shasum": ""
+            },
+            "require": {
+                "jantinnerezo/livewire-alert": "^2.2",
+                "laravel/framework": "^10.0",
+                "livewire/livewire": "^2.10",
+                "outmart/team": "dev-main",
+                "php": "^8.1",
+                "ryangjchandler/blade-tabler-icons": "^2.0",
+                "storephp/bundler": "*",
+                "storephp/core": "dev-develop"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "StorePHP\\Dashboard\\StoreDashboardServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "": "modules/",
+                    "StorePHP\\": "src/",
+                    "StorePHP\\Dashboard\\": "dashboard/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Karim Mohamed (Komtcho)",
+                    "email": "komicho1996@gmail.com"
+                }
+            ],
+            "description": "eCommerce dashboard to help you manage your eCommerce based on laravel.",
+            "keywords": [
+                "dashboard",
+                "ecommerce",
+                "laravel",
+                "store"
+            ],
+            "support": {
+                "issues": "https://github.com/storephp/framework/issues",
+                "source": "https://github.com/storephp/framework/tree/v1.0.0-beta.2"
+            },
+            "time": "2023-09-13T16:06:36+00:00"
         },
         {
             "name": "symfony/console",
@@ -8052,8 +8646,10 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "storephp/framework": 10
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
