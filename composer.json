@@ -1,8 +1,10 @@
 {
     "name": "storephp/store",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "StorePHP you can build your online store.",
     "keywords": [
+        "storephp",
+        "eCommerce",
         "laravel",
         "framework"
     ],

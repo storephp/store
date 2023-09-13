@@ -7,7 +7,7 @@
 
 # StorePHP Store
 
-eCommerce framework to help you build and manage your eCommerce based on laravel.
+StorePHP you can build your online store.
 
 ## Documentation
 
